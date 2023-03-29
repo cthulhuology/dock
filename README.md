@@ -4,6 +4,7 @@ Dockerl - an Erlang based Docker management server
 The dock is a system where in we run a priviledged docker container
 that spawns other docker containers:
 
+```
 ┌───────────┐                      ┌───────────┐ 
 │           │ ──────────────────►  │           │ 
 │           │       epmd           │           │ 
@@ -20,6 +21,7 @@ that spawns other docker containers:
  ├─────────┤                        ├─────────┤ 
  │         │                        │         │ 
  └─────────┘                        └─────────┘
+```
 
 We take advantage of supervisor trees and a distributed database
 to recreate any node that fails.  We also get the ability to inspect
